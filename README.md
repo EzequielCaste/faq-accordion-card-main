@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ Accordion Card
 
+[Live Demo](https://ecaste-faq-accordion-card.vercel.app/)
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
