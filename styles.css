@@ -32,8 +32,10 @@ html, body {
   margin: 4rem -5rem;
 }
 .right {
+  overflow: auto;
+  height: 75%;
   width: 35%;
-  margin: 5rem 2rem;
+  margin: 5rem 2rem;    
 }
 .right ul {
   margin: 2rem 0;
@@ -105,5 +107,20 @@ html, body {
     margin-top: 7rem;
     margin-left: -7rem;
     margin-right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    width: 300px;
+  }
+  .left { 
+    margin: -7rem 2rem;  
+  }
+  .cube {
+    margin: -4rem 0rem;
+  }
+  .right {   
+    margin-left: 0rem;
+    
   }
 }

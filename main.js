@@ -5,26 +5,34 @@ Array.from(textLink).map( el => el.addEventListener('click', (e) => showHide(e))
 
 Array.from(arrow).map( el => el.addEventListener('click', (e) => showHide(e) ));
 
-function showHide(el) {
-  // hide ALL answers
-  const activeQuestions = document.querySelectorAll('.show');
-  Array.from(activeQuestions).map( el => {    
-    el.classList.remove('show')
-  })
+function showHide(el) {  
+  let id;
 
-  // remove ALL bold
-  const activeBold = document.querySelectorAll('.bold')
-  Array.from(activeBold).map( el => el.classList.remove('bold'))
-
-  //const name = `answer${el.target.parentNode.id}`;
-  //const answerDiv = document.querySelector(`.${name}`);
-  
-  const id = el.target.parentNode.children[0].id;
-  // console.log(id);
+  if ( el.target.id.includes('arrow') ) {
+    id = el.target.parentNode.children[0].id;
+  } else {
+    id = el.target.id;    
+  }
   const answerDiv = document.querySelector(`.answer${id}`);
-  
-  answerDiv.classList.toggle('show');
-  document.getElementById(`${id}`).classList.toggle('bold')
-  //textLink.classList.toggle('bold')
-  // el.target.parentNode.children[0]  
+  answerDiv.classList.contains('show') ?
+  answerDiv.classList.remove('show') :
+  answerDiv.classList.add('show')
 }
+
+// // hide ALL answers
+// const activeQuestions = document.querySelectorAll('.show');
+// Array.from(activeQuestions).map( el => {       
+//   el.classList.remove('show')
+// })
+
+// // remove ALL bold
+// const activeBold = document.querySelectorAll('.bold')
+// Array.from(activeBold).map( el => el.classList.remove('bold'))
+
+
+// const id = el.target.parentNode.children[0].id;
+
+// const answerDiv = document.querySelector(`.answer${id}`);
+
+// answerDiv.classList.add('show');
+// document.getElementById(`${id}`).classList.toggle('bold');
