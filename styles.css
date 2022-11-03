@@ -149,14 +149,24 @@ html, body {
   }
 }
 footer {
-  margin: 2rem 0;
+  width: 95vw;
+  font-size: 0.9rem;
   color:hsl(240, 5%, 91%);
-  place-self: self-end;
-  transform: translateX(-15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
 }
+
 footer a {
+  margin: 0 4px;
+}
+
+a,
+a:visited {
   color:hsl(240, 5%, 91%);
 }
-footer div {
-  display: inline;
+
+a:hover {
+  color: black;
 }
