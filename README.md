@@ -4,7 +4,7 @@
 
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Welcome!
 
 Thanks for checking out this front-end coding challenge.
 
