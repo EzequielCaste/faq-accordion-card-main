@@ -128,7 +128,8 @@ html, body {
 }
 @media (max-width: 450px) {
   .card {
-    width: 300px;
+    width: 300px;    
+    margin-top: 8rem;
   }
   .left { 
     margin: -7rem 1rem;  
@@ -146,4 +147,16 @@ html, body {
   .right {   
     margin-left: 0rem;    
   }
+}
+footer {
+  margin: 2rem 0;
+  color:hsl(240, 5%, 91%);
+  place-self: self-end;
+  transform: translateX(-15%);
+}
+footer a {
+  color:hsl(240, 5%, 91%);
+}
+footer div {
+  display: inline;
 }
