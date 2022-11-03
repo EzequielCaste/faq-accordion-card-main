@@ -12,16 +12,17 @@ html, body {
   );
 }
 .card { 
-  height: 60vh;
+  border-radius: 10px;
+  width: 900px;
+  background-color: white;  
+  font-size: 12px;  
+  position: relative;
+  display: flex;
   background-image: url(./images/bg-pattern-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: -36rem -18rem;
-    border-radius: 10px;
-    width: 900px;
-    background-color: white;  
-    font-size: 12px;  
-    position: relative;
-    display: flex;
+  background-repeat: no-repeat;
+  background-position: 2rem -9rem;
+  background-size: 80%;
+  margin-top: 5rem;
 }
 .cube {
   position: fixed;
@@ -35,7 +36,6 @@ html, body {
   overflow: auto;
   height: 75%;
   width: 35%;
-  margin: 5rem 2rem;    
 }
 .right ul {
   margin: 2rem 0;
@@ -76,8 +76,7 @@ html, body {
 @media (max-width: 1100px) {
   .card {
     width: 700px;
-  }
-  
+  }  
   .right {
     width: 40%;
     margin-top: 5rem;
@@ -103,8 +102,8 @@ html, body {
     width: 135px;
   }
   .right {
-    width: 65%;
-    margin-top: 7rem;
+    width: 76%;
+    margin-top: 5rem;
     margin-left: -7rem;
     margin-right: 0;
   }
@@ -114,13 +113,19 @@ html, body {
     width: 300px;
   }
   .left { 
-    margin: -7rem 2rem;  
+    margin: -7rem 1rem;  
+  }
+  .left img {
+    margin-left: 1rem;
   }
   .cube {
     margin: -4rem 0rem;
   }
+  .cube img {    
+    width: 45%;
+    margin: 18px 21px;
+  }
   .right {   
-    margin-left: 0rem;
-    
+    margin-left: 0rem;    
   }
 }
