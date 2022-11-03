@@ -87,6 +87,9 @@ html, body {
 @media (max-width: 850px) {
   .card {
     width: 500px;
+    margin-top: 3rem;
+    background-position: 7rem -9rem;
+    background-size: 47%;
   }
   .left {
     width: 0;
