@@ -56,9 +56,6 @@ html, body {
 .question span {
   cursor: pointer;
 }
-.question span:hover {
-  color: hsl(14, 88%, 65%);
-}
 .answer1,.answer2,.answer3,.answer4 {
   color: hsl(240, 6%, 50%);
   margin-top: 1rem;
@@ -69,13 +66,31 @@ html, body {
 .show {  
   height: 50px;
 }
-.bold {
+.question span:hover.bold {
+  color: #000;
   font-weight: 700;
 }
-
+@media (min-width: 900px) {
+  .question span:hover {
+    color: hsl(14, 88%, 65%);
+  }
+}
+@media (min-width: 1100px) {
+  .card {
+    background-position: -27rem -13rem;
+    background-size: 93%;
+  }  
+  .right {
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+}
 @media (max-width: 1100px) {
   .card {
-    width: 700px;
+    width: 800px;
+    background-position: -26rem -12rem;
+    background-size: 100%;
+
   }  
   .right {
     width: 40%;
